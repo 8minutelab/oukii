@@ -1,159 +1,125 @@
 function toggleMenu() {
-  const mobileNav = document.getElementById('mobileNav');
-  if (mobileNav) {
-    mobileNav.classList.toggle('show');
-  }
+  const nav = document.getElementById("mobileNav");
+  if (!nav) return;
+  nav.classList.toggle("show");
 }
 
 function padZero(num) {
-  return String(num).padStart(2, '0');
+  return String(num).padStart(2, "0");
 }
 
-function getWeekdayZh(dayIndex) {
-  const days = ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'];
-  return days[dayIndex];
+function getHongKongNow() {
+  const now = new Date();
+  const hkString = now.toLocaleString("en-US", { timeZone: "Asia/Hong_Kong" });
+  return new Date(hkString);
 }
 
-function getLunarMonthName(month) {
-  const names = [
-    '',
-    '正月', '二月', '三月', '四月', '五月', '六月',
-    '七月', '八月', '九月', '十月', '冬月', '臘月'
-  ];
-  return names[month] || '';
+function formatWeekday(day) {
+  const weekdays = ["星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"];
+  return weekdays[day];
 }
 
-function getLunarDayName(day) {
-  const names = [
-    '',
-    '初一', '初二', '初三', '初四', '初五',
-    '初六', '初七', '初八', '初九', '初十',
-    '十一', '十二', '十三', '十四', '十五',
-    '十六', '十七', '十八', '十九', '二十',
-    '廿一', '廿二', '廿三', '廿四', '廿五',
-    '廿六', '廿七', '廿八', '廿九', '三十'
-  ];
-  return names[day] || '';
+function getLunarDisplay(date) {
+  try {
+    const lunarFormatter = new Intl.DateTimeFormat("zh-HK-u-ca-chinese", {
+      month: "long",
+      day: "numeric"
+    });
+
+    const parts = lunarFormatter.formatToParts(date);
+    let month = "";
+    let day = "";
+
+    parts.forEach(part => {
+      if (part.type === "month") month = part.value;
+      if (part.type === "day") day = part.value;
+    });
+
+    if (month && day) {
+      return `農曆 ${month}${day}`;
+    }
+  } catch (error) {}
+
+  return "農曆資料";
 }
 
 function getSolarTerm(date) {
-  const year = date.getFullYear();
-  const monthDay = `${padZero(date.getMonth() + 1)}-${padZero(date.getDate())}`;
+  const month = date.getMonth() + 1;
+  const day = date.getDate();
+  const md = month * 100 + day;
 
-  const solarTerms = {
-    '01-05': '小寒',
-    '01-20': '大寒',
-    '02-04': '立春',
-    '02-19': '雨水',
-    '03-05': '驚蟄',
-    '03-20': '春分',
-    '04-04': '清明',
-    '04-20': '穀雨',
-    '05-05': '立夏',
-    '05-21': '小滿',
-    '06-05': '芒種',
-    '06-21': '夏至',
-    '07-07': '小暑',
-    '07-22': '大暑',
-    '08-07': '立秋',
-    '08-23': '處暑',
-    '09-07': '白露',
-    '09-23': '秋分',
-    '10-08': '寒露',
-    '10-23': '霜降',
-    '11-07': '立冬',
-    '11-22': '小雪',
-    '12-07': '大雪',
-    '12-21': '冬至'
-  };
+  const solarTerms = [
+    { start: 106, end: 119, name: "小寒" },
+    { start: 120, end: 203, name: "大寒" },
+    { start: 204, end: 218, name: "立春" },
+    { start: 219, end: 304, name: "雨水" },
+    { start: 305, end: 319, name: "驚蟄" },
+    { start: 320, end: 403, name: "春分" },
+    { start: 404, end: 418, name: "清明" },
+    { start: 419, end: 504, name: "穀雨" },
+    { start: 505, end: 519, name: "立夏" },
+    { start: 520, end: 605, name: "小滿" },
+    { start: 606, end: 620, name: "芒種" },
+    { start: 621, end: 706, name: "夏至" },
+    { start: 707, end: 722, name: "小暑" },
+    { start: 723, end: 807, name: "大暑" },
+    { start: 808, end: 822, name: "立秋" },
+    { start: 823, end: 907, name: "處暑" },
+    { start: 908, end: 922, name: "白露" },
+    { start: 923, end: 1007, name: "秋分" },
+    { start: 1008, end: 1022, name: "寒露" },
+    { start: 1023, end: 1106, name: "霜降" },
+    { start: 1107, end: 1121, name: "立冬" },
+    { start: 1122, end: 1206, name: "小雪" },
+    { start: 1207, end: 1221, name: "大雪" },
+    { start: 1222, end: 105, name: "冬至" }
+  ];
 
-  if (solarTerms[monthDay]) {
-    return solarTerms[monthDay];
-  }
-
-  let latestTerm = '';
-  let latestDate = '';
-
-  Object.keys(solarTerms).forEach((key) => {
-    if (key <= monthDay && key > latestDate) {
-      latestDate = key;
-      latestTerm = solarTerms[key];
-    }
-  });
-
-  if (!latestTerm) {
-    latestTerm = '冬至';
-  }
-
-  return latestTerm;
-}
-
-function updateHeaderDateTime() {
-  const now = new Date();
-  const hkNow = new Date(now.toLocaleString('en-US', { timeZone: 'Asia/Hong_Kong' }));
-
-  const hours = padZero(hkNow.getHours());
-  const minutes = padZero(hkNow.getMinutes());
-
-  const solarDate = `${hkNow.getMonth() + 1}月${hkNow.getDate()}日`;
-  const weekday = getWeekdayZh(hkNow.getDay());
-
-  const timeEl = document.getElementById('hkTime');
-  const solarDateEl = document.getElementById('solarDate');
-  const weekdayEl = document.getElementById('weekday');
-  const lunarDateEl = document.getElementById('lunarDate');
-  const solarTermEl = document.getElementById('solarTerm');
-
-  if (timeEl) {
-    timeEl.textContent = `${hours}:${minutes}`;
-  }
-
-  if (solarDateEl) {
-    solarDateEl.textContent = solarDate;
-  }
-
-  if (weekdayEl) {
-    weekdayEl.textContent = weekday;
-  }
-
-  if (typeof Intl !== 'undefined' && Intl.DateTimeFormat) {
-    try {
-      const lunarFormatter = new Intl.DateTimeFormat('zh-HK-u-ca-chinese', {
-        month: 'long',
-        day: 'numeric'
-      });
-
-      const lunarParts = lunarFormatter.formatToParts(hkNow);
-      let lunarMonth = '';
-      let lunarDay = '';
-
-      lunarParts.forEach((part) => {
-        if (part.type === 'month') {
-          lunarMonth = part.value;
-        }
-        if (part.type === 'day') {
-          lunarDay = part.value;
-        }
-      });
-
-      if (lunarDateEl) {
-        if (lunarMonth && lunarDay) {
-          lunarDateEl.textContent = `農曆 ${lunarMonth}${lunarDay}`;
-        } else {
-          lunarDateEl.textContent = '農曆資料';
-        }
-      }
-    } catch (error) {
-      if (lunarDateEl) {
-        lunarDateEl.textContent = '農曆資料';
-      }
+  for (const term of solarTerms) {
+    if (term.start <= term.end) {
+      if (md >= term.start && md <= term.end) return term.name;
+    } else {
+      if (md >= term.start || md <= term.end) return term.name;
     }
   }
 
-  if (solarTermEl) {
-    solarTermEl.textContent = getSolarTerm(hkNow);
+  return "";
+}
+
+function updateDateTime() {
+  const hkNow = getHongKongNow();
+
+  const hour = padZero(hkNow.getHours());
+  const minute = padZero(hkNow.getMinutes());
+
+  const hkTime = document.getElementById("hkTime");
+  const solarDate = document.getElementById("solarDate");
+  const weekday = document.getElementById("weekday");
+  const lunarDate = document.getElementById("lunarDate");
+  const solarTerm = document.getElementById("solarTerm");
+
+  if (hkTime) {
+    hkTime.textContent = `${hour}:${minute}`;
+  }
+
+  if (solarDate) {
+    solarDate.textContent = `${hkNow.getMonth() + 1}月${hkNow.getDate()}日`;
+  }
+
+  if (weekday) {
+    weekday.textContent = formatWeekday(hkNow.getDay());
+  }
+
+  if (lunarDate) {
+    lunarDate.textContent = getLunarDisplay(hkNow);
+  }
+
+  if (solarTerm) {
+    solarTerm.textContent = getSolarTerm(hkNow);
   }
 }
 
-updateHeaderDateTime();
-setInterval(updateHeaderDateTime, 1000 * 30);
+document.addEventListener("DOMContentLoaded", function () {
+  updateDateTime();
+  setInterval(updateDateTime, 30000);
+});
