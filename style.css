@@ -190,32 +190,32 @@ svg {
   display: inline-flex;
   align-items: center;
   gap: 12px;
-  padding: 12px 24px;
+  padding: 10px 20px;
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.92);
   border: 1px solid #dce5f0;
   color: #64748b;
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 700;
   box-shadow: 0 10px 25px rgba(15, 23, 42, 0.04);
 }
 
 .status-dot {
-  width: 14px;
-  height: 14px;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
   background: #22c55e;
   display: inline-block;
 }
 
+/* 修正重點：改返細同舒服 */
 .hero-title {
-  margin: 26px 0 18px;
-  font-size: clamp(3rem, 7vw, 6rem);
-  line-height: 0.98;
-  letter-spacing: -0.06em;
+  margin: 24px 0 18px;
+  font-size: clamp(2.2rem, 5vw, 4.2rem);
+  line-height: 1.3;
+  letter-spacing: -0.02em;
   font-weight: 900;
   color: #020617;
-  max-width: 11ch;
 }
 
 .highlight {
@@ -224,12 +224,14 @@ svg {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
+  padding-right: 0.1em; /* 防止文字被切邊 */
 }
 
 .hero-desc {
   max-width: 980px;
   margin: 0;
-  font-size: 1.18rem;
+  font-size: 1.05rem;
+  line-height: 1.7;
   color: #64748b;
 }
 
@@ -237,7 +239,7 @@ svg {
 .page-meta {
   display: flex;
   flex-wrap: wrap;
-  gap: 14px 16px;
+  gap: 12px 14px;
   margin-top: 28px;
 }
 
@@ -245,21 +247,22 @@ svg {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 13px 22px;
-  min-height: 52px;
+  padding: 10px 20px;
+  min-height: 46px;
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.92);
   border: 1px solid #dce5f0;
   color: #64748b;
+  font-size: 0.9rem;
   font-weight: 600;
-  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.04);
 }
 
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
-  gap: 18px;
-  margin-top: 38px;
+  gap: 16px;
+  margin-top: 36px;
 }
 
 .primary-btn,
@@ -267,10 +270,10 @@ svg {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 62px;
-  padding: 0 30px;
-  border-radius: 20px;
-  font-size: 1.08rem;
+  min-height: 56px;
+  padding: 0 28px;
+  border-radius: 18px;
+  font-size: 1.05rem;
   font-weight: 800;
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
@@ -278,7 +281,7 @@ svg {
 .primary-btn {
   background: linear-gradient(135deg, #2f67f6, #2d5be2);
   color: #ffffff;
-  box-shadow: 0 18px 36px rgba(47, 103, 246, 0.24);
+  box-shadow: 0 16px 32px rgba(47, 103, 246, 0.24);
 }
 
 .secondary-btn {
@@ -309,14 +312,14 @@ svg {
 }
 
 .quick-card {
-  border-radius: 30px;
-  padding: 30px 34px;
+  border-radius: 28px;
+  padding: 28px 32px;
 }
 
 .quick-card h2 {
   margin: 0 0 16px;
-  font-size: 2rem;
-  line-height: 1.15;
+  font-size: 1.8rem;
+  line-height: 1.2;
 }
 
 .quick-card ul {
@@ -335,7 +338,7 @@ svg {
 
 .topics-section,
 .info-section {
-  padding: 54px 0 68px;
+  padding: 50px 0 64px;
 }
 
 .section-heading {
@@ -345,7 +348,7 @@ svg {
 
 .section-kicker,
 .page-kicker {
-  margin: 0 0 10px;
+  margin: 0 0 8px;
   color: #64748b;
   font-size: 0.95rem;
   font-weight: 700;
@@ -353,8 +356,8 @@ svg {
 
 .section-heading h2 {
   margin: 0 0 12px;
-  font-size: clamp(2rem, 4vw, 2.8rem);
-  line-height: 1.15;
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  line-height: 1.2;
   color: #0f172a;
 }
 
@@ -367,13 +370,13 @@ svg {
 .feature-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 22px;
+  gap: 20px;
 }
 
 .feature-card {
   display: block;
-  border-radius: 28px;
-  padding: 28px;
+  border-radius: 26px;
+  padding: 26px;
   transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
 }
 
@@ -389,7 +392,7 @@ svg {
 
 .feature-card h3 {
   margin: 0 0 10px;
-  font-size: 1.35rem;
+  font-size: 1.3rem;
   line-height: 1.3;
   color: #0f172a;
 }
@@ -400,8 +403,8 @@ svg {
 }
 
 .faq-card {
-  border-radius: 28px;
-  padding: 30px;
+  border-radius: 26px;
+  padding: 28px;
 }
 
 .faq-card p {
@@ -433,9 +436,9 @@ svg {
 
 .page-title {
   margin: 0 0 16px;
-  font-size: clamp(2.2rem, 5vw, 3.5rem);
-  line-height: 1.1;
-  letter-spacing: -0.04em;
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  line-height: 1.2;
+  letter-spacing: -0.03em;
   color: #0f172a;
   word-break: break-word;
 }
@@ -472,14 +475,14 @@ svg {
 .article-card h2 {
   margin-top: 0;
   margin-bottom: 14px;
-  font-size: 2rem;
-  line-height: 1.2;
+  font-size: 1.8rem;
+  line-height: 1.3;
   color: #0f172a;
 }
 
 .article-card h3 {
   margin: 22px 0 12px;
-  font-size: 1.35rem;
+  font-size: 1.3rem;
   color: #0f172a;
 }
 
@@ -645,14 +648,16 @@ svg {
   }
 
   .hero-topline {
-    font-size: 0.94rem;
-    padding: 10px 18px;
+    font-size: 0.9rem;
+    padding: 8px 16px;
   }
 
+  /* 手機版標題修正：改返細，行距鬆返 */
   .hero-title {
-    margin-top: 22px;
-    font-size: clamp(2.6rem, 12vw, 4.2rem);
-    line-height: 1.04;
+    margin-top: 20px;
+    font-size: 2.2rem; 
+    line-height: 1.35;
+    letter-spacing: -0.02em;
     max-width: none;
   }
 
@@ -672,7 +677,7 @@ svg {
   .primary-btn,
   .secondary-btn {
     width: 100%;
-    min-height: 58px;
+    min-height: 54px;
   }
 
   .quick-card,
