@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oukii 公屋易｜香港公屋申請、入伙與家電攻略</title>
+  <meta name="description" content="公屋易整理香港公屋申請流程、入伙準備、家電選購與實用生活資訊，協助住戶更有系統規劃新居。">
+  <link rel="canonical" href="https://www.oukii.com/">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a href="index.html" class="brand">Oukii 公屋易</a>
+
+      <button class="menu-toggle" type="button" onclick="toggleMenu()" aria-label="切換選單">
+        ☰
+      </button>
+
+      <nav class="nav" id="navLinks">
+        <a href="index.html">首頁</a>
+        <a href="#">入伙攻略</a>
+        <a href="#">入伙家電</a>
+        <a href="#">入伙清單</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">香港公屋資訊整理平台</p>
+          <h1>公屋申請、入伙準備與家電攻略，一站睇清</h1>
+          <p class="hero-text">
+            公屋易集中整理香港公屋申請流程、入伙準備、家電選購與生活資訊，
+            幫你由收樓前規劃，到正式搬入後的實際安排，都可以更有系統咁處理。
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#">開始睇入伙家電</a>
+            <a class="btn btn-secondary" href="#">查看入伙清單</a>
+          </div>
+        </div>
+
+        <div class="hero-card card">
+          <h2>你可以由呢度開始</h2>
+          <ul class="hero-list">
+            <li>了解公屋入伙前準備</li>
+            <li>比較冷氣、雪櫃、洗衣機、抽濕機</li>
+            <li>規劃細單位家電與家具擺位</li>
+            <li>整理搬入前後所需用品清單</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">熱門內容</p>
+          <h2>熱門推薦</h2>
+          <p>以下內容會係之後網站最主要入口，你可以先由首頁逐步擴充出去。</p>
+        </div>
+
+        <div class="link-grid">
+          <a class="link-card" href="#">
+            <h3>公屋入伙家電攻略</h3>
+            <p>先由整體角度規劃冷氣、雪櫃、洗衣機、抽濕機與煮食設備。</p>
+          </a>
+
+          <a class="link-card" href="#">
+            <h3>2026 公屋冷氣機推薦</h3>
+            <p>窗口式、分體式、變頻、匹數與慳電重點整理。</p>
+          </a>
+
+          <a class="link-card" href="#">
+            <h3>2026 公屋抽濕機推薦</h3>
+            <p>抽濕量、水箱容量、乾衣模式與細單位潮濕應對方法。</p>
+          </a>
+
+          <a class="link-card" href="#">
+            <h3>2026 公屋洗衣機推薦</h3>
+            <p>前置式、直立式、洗乾一體、容量與深度比較。</p>
+          </a>
+
+          <a class="link-card" href="#">
+            <h3>2026 公屋雪櫃推薦</h3>
+            <p>雙門、上下格、小型、纖薄與變頻雪櫃選購方向。</p>
+          </a>
+
+          <a class="link-card" href="#">
+            <h3>公屋入伙清單</h3>
+            <p>核對大型家電、家具、日用品與搬入前準備事項。</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="cta-box">
+          <div>
+            <p class="section-label">入伙規劃建議</p>
+            <h2>如果你啱啱開始準備搬入公屋</h2>
+            <p>
+              最建議先由「入伙家電攻略」開始，先理清邊幾樣家電要優先買、
+              點樣配合單位空間、預算同生活習慣，再逐頁深入比較。
+            </p>
+          </div>
+          <div class="cta-actions">
+            <a class="btn btn-primary" href="#">前往入伙家電攻略</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">網站定位</p>
+          <h2>公屋易會整理咩內容？</h2>
+        </div>
+
+        <div class="info-grid">
+          <div class="card info-card">
+            <h3>公屋申請資訊</h3>
+            <p>整合申請流程、輪候、審查、收樓前後要留意的重點。</p>
+          </div>
+
+          <div class="card info-card">
+            <h3>入伙準備攻略</h3>
+            <p>由清潔、維修、家具添置，到正式搬入前的流程整理。</p>
+          </div>
+
+          <div class="card info-card">
+            <h3>家電選購推薦</h3>
+            <p>針對公屋空間、預算與實際使用情境，整理實用選購方向。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <h3 class="footer-brand">公屋易</h3>
+          <p class="footer-text">
+            整理香港公屋申請、入伙與家電資訊，協助住戶更有系統規劃新居。
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <a href="index.html">首頁</a>
+          <a href="#">入伙攻略</a>
+          <a href="#">入伙家電</a>* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+  line-height: 1.7;
+  color: #1f2937;
+  background: #f8fafc;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  width: min(1120px, calc(100% - 32px));
+  margin: 0 auto;
+}
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.topbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 72px;
+  gap: 16px;
+}
+
+.brand {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #0f172a;
+  letter-spacing: 0.02em;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav a {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #334155;
+  transition: color 0.2s ease;
+}
+
+.nav a:hover {
+  color: #2563eb;
+}
+
+.menu-toggle {
+  display: none;
+  border: 1px solid #cbd5e1;
+  background: #ffffff;
+  color: #0f172a;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.hero {
+  padding: 72px 0 48px;
+  background: linear-gradient(180deg, #eff6ff 0%, #f8fafc 100%);
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 0.9fr;
+  gap: 28px;
+  align-items: center;
+}
+
+.eyebrow,
+.section-label {
+  display: inline-block;
+  margin: 0 0 12px;
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: #1d4ed8;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  margin: 0 0 16px;
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  line-height: 1.15;
+  color: #0f172a;
+}
+
+.hero-text {
+  margin: 0;
+  font-size: 1.05rem;
+  color: #475569;
+  max-width: 680px;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 0 18px;
+  border-radius: 12px;
+  font-weight: 700;
+  transition: all 0.2s ease;
+}
+
+.btn-primary {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background: #1d4ed8;
+}
+
+.btn-secondary {
+  background: #e2e8f0;
+  color: #0f172a;
+}
+
+.btn-secondary:hover {
+  background: #cbd5e1;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+}
+
+.hero-card {
+  padding: 28px;
+}
+
+.hero-card h2 {
+  margin-top: 0;
+  margin-bottom: 14px;
+  font-size: 1.25rem;
+  color: #0f172a;
+}
+
+.hero-list {
+  margin: 0;
+  padding-left: 20px;
+  color: #475569;
+}
+
+.hero-list li + li {
+  margin-top: 10px;
+}
+
+.section {
+  padding: 56px 0;
+}
+
+.section-alt {
+  background: #eef2ff;
+}
+
+.section-heading {
+  margin-bottom: 24px;
+}
+
+.section-heading h2 {
+  margin: 0 0 8px;
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  color: #0f172a;
+}
+
+.section-heading p {
+  margin: 0;
+  color: #64748b;
+}
+
+.link-grid,
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.link-card {
+  display: block;
+  padding: 22px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.link-card:hover {
+  transform: translateY(-4px);
+  border-color: #bfdbfe;
+  box-shadow: 0 14px 30px rgba(37, 99, 235, 0.08);
+}
+
+.link-card h3 {
+  margin: 0 0 10px;
+  font-size: 1.1rem;
+  color: #0f172a;
+}
+
+.link-card p {
+  margin: 0;
+  color: #64748b;
+}
+
+.cta-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 28px;
+  background: #ffffff;
+  border: 1px solid #c7d2fe;
+  border-radius: 22px;
+  box-shadow: 0 10px 30px rgba(79, 70, 229, 0.06);
+}
+
+.cta-box h2 {
+  margin: 0 0 10px;
+  color: #0f172a;
+}
+
+.cta-box p {
+  margin: 0;
+  color: #475569;
+}
+
+.cta-actions {
+  flex-shrink: 0;
+}
+
+.info-card {
+  padding: 24px;
+}
+
+.info-card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #0f172a;
+}
+
+.info-card p {
+  margin: 0;
+  color: #64748b;
+}
+
+.footer {
+  padding: 40px 0 24px;
+  background: #0f172a;
+  color: #cbd5e1;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+.footer-brand {
+  margin: 0 0 8px;
+  color: #ffffff;
+}
+
+.footer-text {
+  margin: 0;
+  max-width: 560px;
+  color: #94a3b8;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px 18px;
+  align-content: flex-start;
+}
+
+.footer-links a {
+  color: #cbd5e1;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
+}
+
+.footer-bottom {
+  padding-top: 18px;
+  font-size: 0.92rem;
+  color: #94a3b8;
+}
+
+@media (max-width: 900px) {
+  .hero-grid,
+  .link-grid,
+  .info-grid,
+  .cta-box,
+  .footer-top {
+    grid-template-columns: 1fr;
+    flex-direction: column;
+  }
+
+  .cta-actions {
+    width: 100%;
+  }
+
+  .cta-actions .btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: inline-block;
+  }
+
+  .nav {
+    display: none;
+    position: absolute;
+    top: 72px;
+    left: 16px;
+    right: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
+  }
+
+  .nav.show {
+    display: flex;
+  }
+
+  .hero {
+    padding: 56px 0 36px;
+  }
+
+  .section {
+    padding: 44px 0;
+  }
+
+  .link-grid,
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-card,
+  .link-card,
+  .info-card,
+  .cta-box {
+    padding: 20px;
+  }
+}
+
+          <a href="#">入伙清單</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 公屋易. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
