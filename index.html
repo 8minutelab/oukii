@@ -3,49 +3,89 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Oukii 公屋易｜香港公屋申請、入伙與家電攻略</title>
-  <meta name="description" content="公屋易整理香港公屋申請流程、入伙準備、家電選購與實用生活資訊，協助住戶更有系統規劃新居。">
+  <title>公屋易｜由申請到入伙，一站式睇清香港公屋重點</title>
+  <meta name="description" content="公屋易集中整理香港公屋輪候時間、入息及資產限額、非長者一人計分制，以及入伙與收樓準備資訊，方便你按所處階段快速搵到重點。">
   <link rel="canonical" href="https://oukii.com/">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="topbar">
-    <div class="container topbar-inner">
-      <a href="index.html" class="brand">Oukii 公屋易</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="site-brand" aria-label="公屋易首頁">
+        <span class="brand-icon">
+          <svg viewBox="0 0 64 64" aria-hidden="true">
+            <rect x="8" y="8" width="30" height="48" rx="6"></rect>
+            <rect x="15" y="15" width="6" height="6" rx="1"></rect>
+            <rect x="25" y="15" width="6" height="6" rx="1"></rect>
+            <rect x="15" y="25" width="6" height="6" rx="1"></rect>
+            <rect x="25" y="25" width="6" height="6" rx="1"></rect>
+            <rect x="19" y="40" width="10" height="16" rx="2"></rect>
+            <path d="M44 23c6 0 12 5 12 12v21h-8V39h-4z"></path>
+          </svg>
+        </span>
+        <span class="brand-text">公屋易</span>
+      </a>
 
-      <button class="menu-toggle" type="button" onclick="toggleMenu()" aria-label="切換選單">
-        ☰
-      </button>
-
-      <nav class="nav" id="navLinks">
+      <nav class="desktop-nav" aria-label="主要導航">
         <a href="index.html">首頁</a>
         <a href="move-in-guide.html">入伙攻略</a>
         <a href="move-in-appliances.html">入伙家電</a>
         <a href="move-in-checklist.html">入伙清單</a>
       </nav>
+
+      <button class="menu-toggle" type="button" onclick="toggleMenu()" aria-label="切換選單">☰</button>
     </div>
+
+    <nav class="mobile-nav" id="mobileNav" aria-label="手機導航">
+      <a href="index.html">首頁</a>
+      <a href="move-in-guide.html">入伙攻略</a>
+      <a href="move-in-appliances.html">入伙家電</a>
+      <a href="move-in-checklist.html">入伙清單</a>
+      <a href="best-aircon-guide.html">冷氣推薦</a>
+      <a href="best-dehumidifier-guide.html">抽濕機推薦</a>
+      <a href="best-washing-machine-guide.html">洗衣機推薦</a>
+      <a href="best-fridge-guide.html">雪櫃推薦</a>
+      <a href="best-bed-guide.html">床架推薦</a>
+      <a href="best-induction-cooker-guide.html">電磁爐推薦</a>
+    </nav>
   </header>
 
   <main>
-    <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow">香港公屋資訊整理平台</p>
-          <h1>公屋申請、入伙準備與家電攻略，一站睇清</h1>
-          <p class="hero-text">
-            公屋易集中整理香港公屋申請流程、入伙準備、家電選購與生活資訊，
-            幫你由收樓前規劃，到正式搬入後的實際安排，都可以更有系統咁處理。
-          </p>
-
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="move-in-appliances.html">開始睇入伙家電</a>
-            <a class="btn btn-secondary" href="move-in-checklist.html">查看入伙清單</a>
-          </div>
+    <section class="hero-section">
+      <div class="container hero-wrap">
+        <div class="hero-topline">
+          <span class="status-dot"></span>
+          香港公屋資訊整合平台
         </div>
 
-        <div class="hero-card card">
+        <h1 class="hero-title">
+          由申請到入伙，<span class="highlight">一站式睇清</span><br>
+          香港公屋重點
+        </h1>
+
+        <p class="hero-desc">
+          公屋易集中整理香港公屋輪候時間、入息及資產限額、非長者一人計分制，
+          以及收樓裝修攻略，方便你按自己所處階段快速搵到重點。
+        </p>
+
+        <div class="hero-meta">
+          <span class="meta-pill">最後更新：2026年3月11日</span>
+          <span class="meta-pill">內容類型：首頁整合版</span>
+          <span class="meta-pill">資料整理：房委會 / 公開資訊</span>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#topics" class="primary-btn">開始睇主題</a>
+          <a href="#faq" class="secondary-btn">常見問題</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="quick-section">
+      <div class="container">
+        <div class="quick-card">
           <h2>你可以由呢度開始</h2>
-          <ul class="hero-list">
+          <ul>
             <li>了解公屋入伙前準備</li>
             <li>比較冷氣、雪櫃、洗衣機、抽濕機</li>
             <li>規劃細單位家電與家具擺位</li>
@@ -55,100 +95,100 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="topics-section" id="topics">
       <div class="container">
         <div class="section-heading">
-          <p class="section-label">熱門內容</p>
+          <p class="section-kicker">熱門內容</p>
           <h2>熱門推薦</h2>
           <p>以下內容會係之後網站最主要入口，你可以先由首頁逐步擴充出去。</p>
         </div>
 
-        <div class="link-grid">
-          <a class="link-card" href="move-in-appliances.html">
+        <div class="feature-grid">
+          <a class="feature-card" href="move-in-appliances.html">
+            <div class="feature-icon">🏠</div>
             <h3>公屋入伙家電攻略</h3>
             <p>先由整體角度規劃冷氣、雪櫃、洗衣機、抽濕機與煮食設備。</p>
           </a>
 
-          <a class="link-card" href="best-aircon-guide.html">
+          <a class="feature-card" href="best-aircon-guide.html">
+            <div class="feature-icon">❄️</div>
             <h3>2026 公屋冷氣機推薦</h3>
             <p>窗口式、分體式、變頻、匹數與慳電重點整理。</p>
           </a>
 
-          <a class="link-card" href="best-dehumidifier-guide.html">
+          <a class="feature-card" href="best-dehumidifier-guide.html">
+            <div class="feature-icon">💧</div>
             <h3>2026 公屋抽濕機推薦</h3>
             <p>抽濕量、水箱容量、乾衣模式與細單位潮濕應對方法。</p>
           </a>
 
-          <a class="link-card" href="best-washing-machine-guide.html">
+          <a class="feature-card" href="best-washing-machine-guide.html">
+            <div class="feature-icon">🧺</div>
             <h3>2026 公屋洗衣機推薦</h3>
             <p>前置式、直立式、洗乾一體、容量與深度比較。</p>
           </a>
 
-          <a class="link-card" href="best-fridge-guide.html">
+          <a class="feature-card" href="best-fridge-guide.html">
+            <div class="feature-icon">🧊</div>
             <h3>2026 公屋雪櫃推薦</h3>
-            <p>雙門、上下格、小型、纖薄與變頻雪櫃選購方向。</p>
+            <p>雙門、纖薄、小型與變頻雪櫃選購方向。</p>
           </a>
 
-          <a class="link-card" href="move-in-checklist.html">
-            <h3>公屋入伙清單</h3>
-            <p>核對大型家電、家具、日用品與搬入前準備事項。</p>
+          <a class="feature-card" href="move-in-guide.html">
+            <div class="feature-icon">🧭</div>
+            <h3>公屋入伙攻略</h3>
+            <p>由收樓、清潔、檢查、搬入流程到大型家電安排一文睇清。</p>
           </a>
         </div>
       </div>
     </section>
 
-    <section class="section section-alt">
+    <section class="info-section" id="faq">
       <div class="container">
-        <div class="cta-box">
-          <div>
-            <p class="section-label">入伙規劃建議</p>
-            <h2>如果你啱啱開始準備搬入公屋</h2>
-            <p>
-              最建議先由「入伙家電攻略」開始，先理清邊幾樣家電要優先買、
-              點樣配合單位空間、預算同生活習慣，再逐頁深入比較。
-            </p>
-          </div>
-          <div class="cta-actions">
-            <a class="btn btn-primary" href="move-in-appliances.html">前往入伙家電攻略</a>
-          </div>
+        <div class="section-heading">
+          <p class="section-kicker">常見問題</p>
+          <h2>第一次睇公屋資料，應該由邊度開始？</h2>
+        </div>
+
+        <div class="faq-card">
+          <p>
+            如果你而家仲係輪候或者準備申請，建議先由首頁掌握大方向；
+            如果你已經準備收樓或者入伙，就可以先睇
+            <a href="move-in-guide.html">入伙攻略</a>、
+            <a href="move-in-appliances.html">入伙家電</a>
+            同 <a href="move-in-checklist.html">入伙清單</a>。
+          </p>
+          <p>
+            之後再按需要深入閱讀
+            <a href="best-aircon-guide.html">冷氣</a>、
+            <a href="best-dehumidifier-guide.html">抽濕機</a>、
+            <a href="best-washing-machine-guide.html">洗衣機</a>、
+            <a href="best-fridge-guide.html">雪櫃</a>、
+            <a href="best-bed-guide.html">床架</a>
+            同 <a href="best-induction-cooker-guide.html">電磁爐</a> 等個別頁面。
+          </p>
         </div>
       </div>
     </section>
+  </main>
 
-    <section class="section">
-      <div class="container">
-        <div class="section-heading">
-          <p class="section-label">網站定位</p>
-          <h2>公屋易會整理咩內容？</h2>
-        </div>
-
-        <div class="info-grid">
-          <div class="card info-card">
-            <h3>公屋申請資訊</h3>
-            <p>整合申請流程、輪候、審查、收樓前後要留意的重點。</p>
-          </div>
-
-          <div class="card info-card">
-            <h3>入伙準備攻略</h3>
-            <p>由清潔、維修、家具添置，到正式搬入前的流程整理。</p>
-          </div>
-
-          <div class="card info-card">
-            <h3>家電選購推薦</h3>
-            <p>針對公屋空間、預算與實際使用情境，整理實用選購方向。</p>
-          </div>
-        </div>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-links">
+        <a href="index.html">首頁</a>
+        <a href="move-in-guide.html">入伙攻略</a>
+        <a href="move-in-appliances.html">入伙家電</a>
+        <a href="move-in-checklist.html">入伙清單</a>
+        <a href="best-aircon-guide.html">冷氣推薦</a>
+        <a href="best-dehumidifier-guide.html">抽濕機推薦</a>
+        <a href="best-washing-machine-guide.html">洗衣機推薦</a>
+        <a href="best-fridge-guide.html">雪櫃推薦</a>
+        <a href="best-bed-guide.html">床架推薦</a>
+        <a href="best-induction-cooker-guide.html">電磁爐推薦</a>
       </div>
-    </section>
+    </div>
+  </footer>
 
-    <section class="section">
-      <div class="container">
-        <div class="section-heading">
-          <p class="section-label">網站資訊</p>
-          <h2>更多網站資料</h2>
-        </div>
-
-        <div class="link-grid">
-          <a class="link-card" href="about.html">
-            <h3>關於我們</h3>
-            <p>了解公屋易網站定位
+  <script src="script.js"></script>
+</body>
+</html>
