@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>公屋易｜由申請到入伙，一站式睇清香港公屋重點</title>
-  <meta name="description" content="公屋易集中整理香港公屋輪候時間、入息及資產限額、非長者一人計分制，以及入伙與收樓準備資訊，方便你按所處階段快速搵到重點。">
+  <meta name="description" content="公屋易集中整理香港公屋輪候時間、入息及資產限額、非長者一人計分制，以及收樓裝修攻略，方便你按自己所處階段快速搵到重點。">
   <link rel="canonical" href="https://oukii.com/">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -12,28 +12,45 @@
   <header class="site-header">
     <div class="container header-inner">
       <a href="index.html" class="site-brand" aria-label="公屋易首頁">
-        <span class="brand-icon">
-          <svg viewBox="0 0 64 64" aria-hidden="true">
-            <rect x="8" y="8" width="30" height="48" rx="6"></rect>
-            <rect x="15" y="15" width="6" height="6" rx="1"></rect>
-            <rect x="25" y="15" width="6" height="6" rx="1"></rect>
-            <rect x="15" y="25" width="6" height="6" rx="1"></rect>
-            <rect x="25" y="25" width="6" height="6" rx="1"></rect>
-            <rect x="19" y="40" width="10" height="16" rx="2"></rect>
-            <path d="M44 23c6 0 12 5 12 12v21h-8V39h-4z"></path>
+        <span class="brand-icon" aria-hidden="true">
+          <svg viewBox="0 0 64 64" role="img">
+            <rect x="8" y="10" width="30" height="44" rx="6"></rect>
+            <rect x="15" y="17" width="6" height="6" rx="1.5" fill="white"></rect>
+            <rect x="25" y="17" width="6" height="6" rx="1.5" fill="white"></rect>
+            <rect x="15" y="27" width="6" height="6" rx="1.5" fill="white"></rect>
+            <rect x="25" y="27" width="6" height="6" rx="1.5" fill="white"></rect>
+            <rect x="19" y="40" width="10" height="14" rx="2" fill="white"></rect>
+            <rect x="42" y="22" width="10" height="32" rx="5"></rect>
+            <rect x="38" y="18" width="8" height="20" rx="4"></rect>
           </svg>
         </span>
         <span class="brand-text">公屋易</span>
       </a>
 
-      <nav class="desktop-nav" aria-label="主要導航">
-        <a href="index.html">首頁</a>
-        <a href="move-in-guide.html">入伙攻略</a>
-        <a href="move-in-appliances.html">入伙家電</a>
-        <a href="move-in-checklist.html">入伙清單</a>
-      </nav>
+      <div class="header-right">
+        <div class="header-datetime" aria-label="日期與時間資訊">
+          <div class="datetime-time" id="hkTime">01:42</div>
+          <div class="datetime-date-line">
+            <span id="solarDate">3月12日</span>
+            <span>・</span>
+            <span id="weekday">星期四</span>
+          </div>
+          <div class="datetime-lunar-line">
+            <span id="lunarDate">農曆 正月廿四</span>
+            <span class="solar-term-dot">・</span>
+            <span id="solarTerm">驚蟄</span>
+          </div>
+        </div>
 
-      <button class="menu-toggle" type="button" onclick="toggleMenu()" aria-label="切換選單">☰</button>
+        <nav class="desktop-nav" aria-label="主要導航">
+          <a href="index.html">首頁</a>
+          <a href="move-in-guide.html">入伙攻略</a>
+          <a href="move-in-appliances.html">入伙家電</a>
+          <a href="move-in-checklist.html">入伙清單</a>
+        </nav>
+
+        <button class="menu-toggle" type="button" onclick="toggleMenu()" aria-label="切換選單">☰</button>
+      </div>
     </div>
 
     <nav class="mobile-nav" id="mobileNav" aria-label="手機導航">
@@ -45,8 +62,6 @@
       <a href="best-dehumidifier-guide.html">抽濕機推薦</a>
       <a href="best-washing-machine-guide.html">洗衣機推薦</a>
       <a href="best-fridge-guide.html">雪櫃推薦</a>
-      <a href="best-bed-guide.html">床架推薦</a>
-      <a href="best-induction-cooker-guide.html">電磁爐推薦</a>
     </nav>
   </header>
 
@@ -163,9 +178,8 @@
             <a href="best-aircon-guide.html">冷氣</a>、
             <a href="best-dehumidifier-guide.html">抽濕機</a>、
             <a href="best-washing-machine-guide.html">洗衣機</a>、
-            <a href="best-fridge-guide.html">雪櫃</a>、
-            <a href="best-bed-guide.html">床架</a>
-            同 <a href="best-induction-cooker-guide.html">電磁爐</a> 等個別頁面。
+            <a href="best-fridge-guide.html">雪櫃</a>
+            等個別頁面。
           </p>
         </div>
       </div>
@@ -183,8 +197,6 @@
         <a href="best-dehumidifier-guide.html">抽濕機推薦</a>
         <a href="best-washing-machine-guide.html">洗衣機推薦</a>
         <a href="best-fridge-guide.html">雪櫃推薦</a>
-        <a href="best-bed-guide.html">床架推薦</a>
-        <a href="best-induction-cooker-guide.html">電磁爐推薦</a>
       </div>
     </div>
   </footer>

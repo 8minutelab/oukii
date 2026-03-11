@@ -3,90 +3,153 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>公屋入伙清單｜家電、家具、日用品準備項目總整理｜公屋易</title>
-  <meta name="description" content="公屋入伙清單整理大型家電、家具、清潔用品、廚房用品與搬入前準備事項，協助住戶更有系統規劃新居。">
+  <title>公屋入伙清單｜公屋易</title>
+  <meta name="description" content="整理公屋入伙前後常見所需用品，包括清潔用品、廚房用品、浴室用品與基本家居用品，方便你更有系統準備。">
   <link rel="canonical" href="https://oukii.com/move-in-checklist.html">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="topbar">
-    <div class="container topbar-inner">
-      <a href="index.html" class="brand">公屋易</a>
-      <button class="menu-toggle" type="button" onclick="toggleMenu()" aria-label="切換選單">☰</button>
-      <nav class="nav" id="navLinks">
-        <a href="index.html">首頁</a>
-        <a href="move-in-guide.html">入伙攻略</a>
-        <a href="move-in-appliances.html">入伙家電</a>
-        <a href="move-in-checklist.html">入伙清單</a>
-      </nav>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="site-brand" aria-label="公屋易首頁">
+        <span class="brand-icon" aria-hidden="true">
+          <svg viewBox="0 0 64 64" role="img">
+            <rect x="8" y="10" width="30" height="44" rx="6"></rect>
+            <rect x="15" y="17" width="6" height="6" rx="1.5" fill="white"></rect>
+            <rect x="25" y="17" width="6" height="6" rx="1.5" fill="white"></rect>
+            <rect x="15" y="27" width="6" height="6" rx="1.5" fill="white"></rect>
+            <rect x="25" y="27" width="6" height="6" rx="1.5" fill="white"></rect>
+            <rect x="19" y="40" width="10" height="14" rx="2" fill="white"></rect>
+            <rect x="42" y="22" width="10" height="32" rx="5"></rect>
+            <rect x="38" y="18" width="8" height="20" rx="4"></rect>
+          </svg>
+        </span>
+        <span class="brand-text">公屋易</span>
+      </a>
+
+      <div class="header-right">
+        <div class="header-datetime" aria-label="日期與時間資訊">
+          <div class="datetime-time" id="hkTime">01:42</div>
+          <div class="datetime-date-line">
+            <span id="solarDate">3月12日</span>
+            <span>・</span>
+            <span id="weekday">星期四</span>
+          </div>
+          <div class="datetime-lunar-line">
+            <span id="lunarDate">農曆 正月廿四</span>
+            <span class="solar-term-dot">・</span>
+            <span id="solarTerm">驚蟄</span>
+          </div>
+        </div>
+
+        <nav class="desktop-nav" aria-label="主要導航">
+          <a href="index.html">首頁</a>
+          <a href="move-in-guide.html">入伙攻略</a>
+          <a href="move-in-appliances.html">入伙家電</a>
+          <a href="move-in-checklist.html">入伙清單</a>
+        </nav>
+
+        <button class="menu-toggle" type="button" onclick="toggleMenu()" aria-label="切換選單">☰</button>
+      </div>
     </div>
+
+    <nav class="mobile-nav" id="mobileNav" aria-label="手機導航">
+      <a href="index.html">首頁</a>
+      <a href="move-in-guide.html">入伙攻略</a>
+      <a href="move-in-appliances.html">入伙家電</a>
+      <a href="move-in-checklist.html">入伙清單</a>
+      <a href="best-aircon-guide.html">冷氣推薦</a>
+      <a href="best-dehumidifier-guide.html">抽濕機推薦</a>
+      <a href="best-washing-machine-guide.html">洗衣機推薦</a>
+      <a href="best-fridge-guide.html">雪櫃推薦</a>
+    </nav>
   </header>
 
-  <main class="section">
-    <div class="container">
-      <p class="section-label">Checklist</p>
-      <h1>公屋入伙清單</h1>
-      <p>
-        入伙前最常見問題唔係買唔買，而係唔知應該先買邊樣。用清單方式整理，
-        可以減少遺漏，同時避免一開始買太多、放唔落或者未諗清楚用途。
-      </p>
-
-      <section class="card info-card">
-        <h2>大型家電</h2>
-        <ul>
-          <li>雪櫃</li>
-          <li>洗衣機</li>
-          <li>冷氣</li>
-          <li>抽濕機</li>
-          <li>電磁爐</li>
-        </ul>
-        <p>
-          如需逐樣比較，可先睇
-          <a href="move-in-appliances.html">公屋入伙家電攻略</a>。
+  <main>
+    <section class="page-hero">
+      <div class="container article-shell">
+        <p class="page-kicker">用品整理</p>
+        <h1 class="page-title">公屋入伙清單</h1>
+        <p class="page-summary">
+          入伙前如果冇先整理需要購買嘅用品，好容易出現重複買、漏買或者搬入後先發現欠缺基本用品。
+          所以最實際係按房間同功能分類，逐步準備清潔用品、廚房用品、浴室用品同基本家居用品。
         </p>
-      </section>
 
-      <section class="card info-card">
-        <h2>基本家具</h2>
-        <ul>
-          <li>床架 / 床褥</li>
-          <li>衣櫃 / 收納櫃</li>
-          <li>餐枱 / 摺枱</li>
-          <li>鞋櫃 / 掛架</li>
-        </ul>
-      </section>
-
-      <section class="card info-card">
-        <h2>清潔與日常用品</h2>
-        <ul>
-          <li>垃圾袋、抹布、手套</li>
-          <li>掃把、拖把、桶</li>
-          <li>廁紙、紙巾、基本收納盒</li>
-          <li>廚房基本器具與餐具</li>
-        </ul>
-      </section>
-
-      <section class="card related-reading">
-        <h2>相關閱讀</h2>
-        <div class="link-grid">
-          <a class="link-card" href="move-in-guide.html">
-            <h3>公屋入伙攻略</h3>
-            <p>了解搬入前後應如何安排次序。</p>
-          </a>
-          <a class="link-card" href="move-in-appliances.html">
-            <h3>公屋入伙家電攻略</h3>
-            <p>整體規劃家電購買先後與空間安排。</p>
-          </a>
-          <a class="link-card" href="best-bed-guide.html">
-            <h3>2026 公屋床推薦</h3>
-            <p>床架與細房收納安排方向。</p>
-          </a>
+        <div class="page-meta">
+          <span class="meta-pill">主題：用品整理</span>
+          <span class="meta-pill">內容類型：清單頁</span>
+          <span class="meta-pill">更新：2026年3月</span>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
+
+    <section class="article-section">
+      <div class="container article-shell">
+        <article class="article-card">
+          <h2>入伙前最先要準備咩？</h2>
+          <p>
+            最基本可以先由清潔用品開始，例如抹布、垃圾袋、地拖、水桶、手套等。
+            因為就算大型家電未送到，收樓之後都通常會先做一次基本清潔，令後續搬運更順。
+          </p>
+
+          <h2>建議清單分類</h2>
+
+          <h3>1. 清潔用品</h3>
+          <ul>
+            <li>抹布、清潔桶、手套、垃圾袋</li>
+            <li>地拖、掃把、刷具</li>
+            <li>基本家居整理用品</li>
+          </ul>
+
+          <h3>2. 廚房用品</h3>
+          <ul>
+            <li>碗碟、餐具、鍋具</li>
+            <li>食物收納盒</li>
+            <li>煮食前需要的基本工具</li>
+          </ul>
+
+          <h3>3. 浴室用品</h3>
+          <ul>
+            <li>毛巾、浴簾、浴室收納用品</li>
+            <li>洗澡及個人清潔基本用品</li>
+          </ul>
+
+          <h3>4. 基本家居用品</h3>
+          <ul>
+            <li>床上用品</li>
+            <li>衣架、儲物箱、小型收納用品</li>
+            <li>插拖板與基本照明補充用品</li>
+          </ul>
+
+          <h2>點樣避免重複買？</h2>
+          <p>
+            最好先按房間分類，再區分「入伙即用」同「入住後補充」。
+            例如大型家具未到之前，不需要急住一次買齊所有收納盒；
+            但基本清潔用品、床上用品、垃圾袋、日常洗漱用品就應該先準備。
+          </p>
+
+          <h2>有咩最容易漏買？</h2>
+          <p>
+            常見漏買項目通常唔係大型用品，反而係垃圾袋、抹布、衣架、
+            插拖板、剪刀、基本收納盒同浴室小配件。呢類細件唔貴，但入住頭幾日最常用到，
+            所以值得先整理好。
+          </p>
+        </article>
+
+        <aside class="related-card">
+          <h3>延伸閱讀</h3>
+          <ul>
+            <li><a href="move-in-guide.html">公屋入伙攻略</a></li>
+            <li><a href="move-in-appliances.html">公屋入伙家電攻略</a></li>
+            <li><a href="best-fridge-guide.html">公屋雪櫃推薦</a></li>
+            <li><a href="best-dehumidifier-guide.html">公屋抽濕機推薦</a></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
   </main>
 
-  <footer class="footer">
+  <footer class="site-footer">
     <div class="container">
       <div class="footer-links">
         <a href="index.html">首頁</a>
@@ -97,8 +160,6 @@
         <a href="best-dehumidifier-guide.html">抽濕機推薦</a>
         <a href="best-washing-machine-guide.html">洗衣機推薦</a>
         <a href="best-fridge-guide.html">雪櫃推薦</a>
-        <a href="best-bed-guide.html">床架推薦</a>
-        <a href="best-induction-cooker-guide.html">電磁爐推薦</a>
       </div>
     </div>
   </footer>

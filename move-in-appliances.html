@@ -3,95 +3,144 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>公屋入伙家電攻略｜冷氣、雪櫃、洗衣機、抽濕機點揀｜公屋易</title>
-  <meta name="description" content="公屋入伙家電攻略整合冷氣、雪櫃、洗衣機、抽濕機、床架與電磁爐安排，協助住戶按空間、預算與生活習慣規劃。">
+  <title>公屋入伙家電攻略｜公屋易</title>
+  <meta name="description" content="整理香港公屋入伙時常見家電的規劃方向，包括冷氣、雪櫃、洗衣機、抽濕機與煮食設備，方便按空間與預算部署。">
   <link rel="canonical" href="https://oukii.com/move-in-appliances.html">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="topbar">
-    <div class="container topbar-inner">
-      <a href="index.html" class="brand">公屋易</a>
-      <button class="menu-toggle" type="button" onclick="toggleMenu()" aria-label="切換選單">☰</button>
-      <nav class="nav" id="navLinks">
-        <a href="index.html">首頁</a>
-        <a href="move-in-guide.html">入伙攻略</a>
-        <a href="move-in-appliances.html">入伙家電</a>
-        <a href="move-in-checklist.html">入伙清單</a>
-      </nav>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="site-brand" aria-label="公屋易首頁">
+        <span class="brand-icon" aria-hidden="true">
+          <svg viewBox="0 0 64 64" role="img">
+            <rect x="8" y="10" width="30" height="44" rx="6"></rect>
+            <rect x="15" y="17" width="6" height="6" rx="1.5" fill="white"></rect>
+            <rect x="25" y="17" width="6" height="6" rx="1.5" fill="white"></rect>
+            <rect x="15" y="27" width="6" height="6" rx="1.5" fill="white"></rect>
+            <rect x="25" y="27" width="6" height="6" rx="1.5" fill="white"></rect>
+            <rect x="19" y="40" width="10" height="14" rx="2" fill="white"></rect>
+            <rect x="42" y="22" width="10" height="32" rx="5"></rect>
+            <rect x="38" y="18" width="8" height="20" rx="4"></rect>
+          </svg>
+        </span>
+        <span class="brand-text">公屋易</span>
+      </a>
+
+      <div class="header-right">
+        <div class="header-datetime" aria-label="日期與時間資訊">
+          <div class="datetime-time" id="hkTime">01:42</div>
+          <div class="datetime-date-line">
+            <span id="solarDate">3月12日</span>
+            <span>・</span>
+            <span id="weekday">星期四</span>
+          </div>
+          <div class="datetime-lunar-line">
+            <span id="lunarDate">農曆 正月廿四</span>
+            <span class="solar-term-dot">・</span>
+            <span id="solarTerm">驚蟄</span>
+          </div>
+        </div>
+
+        <nav class="desktop-nav" aria-label="主要導航">
+          <a href="index.html">首頁</a>
+          <a href="move-in-guide.html">入伙攻略</a>
+          <a href="move-in-appliances.html">入伙家電</a>
+          <a href="move-in-checklist.html">入伙清單</a>
+        </nav>
+
+        <button class="menu-toggle" type="button" onclick="toggleMenu()" aria-label="切換選單">☰</button>
+      </div>
     </div>
+
+    <nav class="mobile-nav" id="mobileNav" aria-label="手機導航">
+      <a href="index.html">首頁</a>
+      <a href="move-in-guide.html">入伙攻略</a>
+      <a href="move-in-appliances.html">入伙家電</a>
+      <a href="move-in-checklist.html">入伙清單</a>
+      <a href="best-aircon-guide.html">冷氣推薦</a>
+      <a href="best-dehumidifier-guide.html">抽濕機推薦</a>
+      <a href="best-washing-machine-guide.html">洗衣機推薦</a>
+      <a href="best-fridge-guide.html">雪櫃推薦</a>
+    </nav>
   </header>
 
-  <main class="section">
-    <div class="container">
-      <p class="section-label">家電規劃 Hub</p>
-      <h1>公屋入伙家電攻略</h1>
-      <p>
-        公屋入伙家電唔適合逐樣分開亂買，因為細單位空間、插座位置、預算限制與生活習慣，
-        會直接影響冷氣、雪櫃、洗衣機、抽濕機、床架同煮食設備的先後次序。最理想係先做整體規劃，
-        再按需要逐頁深入比較。
-      </p>
-
-      <section class="card info-card">
-        <h2>應該優先買邊幾樣？</h2>
-        <p>
-          一般而言，多數家庭會先考慮雪櫃、洗衣機、冷氣，再視乎天氣同單位潮濕情況安排抽濕機。
-          如果你已經確定廚房煮食方式，可以再同步考慮電磁爐；床架則視乎房間尺寸與收納需要決定。
+  <main>
+    <section class="page-hero">
+      <div class="container article-shell">
+        <p class="page-kicker">家電規劃</p>
+        <h1 class="page-title">公屋入伙家電攻略</h1>
+        <p class="page-summary">
+          公屋單位空間有限，入伙時更需要先分清邊啲家電應該優先處理。
+          一般會由雪櫃、洗衣機、冷氣開始，再按潮濕程度、煮食習慣同預算安排抽濕機、
+          電磁爐或其他生活電器。
         </p>
-      </section>
 
-      <section class="card info-card">
-        <h2>細單位最重要考慮</h2>
-        <ul>
-          <li>量度門口、走廊、廚房、浴室與睡房尺寸</li>
-          <li>確認插座位置與排水安排</li>
-          <li>避免大型家電互相阻擋開門與通風</li>
-          <li>將收納、乾衣與煮食習慣一齊考慮</li>
-        </ul>
-      </section>
-
-      <section class="card related-reading">
-        <h2>家電推薦總覽</h2>
-        <div class="link-grid">
-          <a class="link-card" href="best-aircon-guide.html">
-            <h3>2026 公屋冷氣機推薦</h3>
-            <p>窗口式、分體式、匹數、變頻與慳電方向。</p>
-          </a>
-          <a class="link-card" href="best-dehumidifier-guide.html">
-            <h3>2026 公屋抽濕機推薦</h3>
-            <p>抽濕量、乾衣模式、水箱容量與潮濕應對。</p>
-          </a>
-          <a class="link-card" href="best-washing-machine-guide.html">
-            <h3>2026 公屋洗衣機推薦</h3>
-            <p>前置式、直立式、洗乾一體與尺寸安排。</p>
-          </a>
-          <a class="link-card" href="best-fridge-guide.html">
-            <h3>2026 公屋雪櫃推薦</h3>
-            <p>雙門、纖薄、小型與變頻雪櫃選購方向。</p>
-          </a>
-          <a class="link-card" href="best-bed-guide.html">
-            <h3>2026 公屋床推薦</h3>
-            <p>單人床、雙人床、油壓床、收納床與擺位。</p>
-          </a>
-          <a class="link-card" href="best-induction-cooker-guide.html">
-            <h3>2026 公屋電磁爐推薦</h3>
-            <p>單頭、雙頭、座枱式與嵌入式比較。</p>
-          </a>
+        <div class="page-meta">
+          <span class="meta-pill">主題：家電規劃</span>
+          <span class="meta-pill">內容類型：攻略頁</span>
+          <span class="meta-pill">更新：2026年3月</span>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="card info-card">
-        <h2>閱讀路線建議</h2>
-        <p>
-          如果你啱啱入伙，建議先睇 <a href="move-in-guide.html">入伙攻略</a>，
-          再用 <a href="move-in-checklist.html">入伙清單</a> 核對要買咩。
-          之後可以按需要深入閱讀冷氣、抽濕機、洗衣機、雪櫃、床架與電磁爐個別推薦頁。
-        </p>
-      </section>
-    </div>
+    <section class="article-section">
+      <div class="container article-shell">
+        <article class="article-card">
+          <h2>入伙時建議優先處理邊幾類家電？</h2>
+          <p>
+            大部分家庭會優先安排雪櫃、洗衣機同冷氣，因為呢幾類家電最直接影響日常生活。
+            如果單位較潮濕，抽濕機亦值得提早考慮。至於煮食設備、微波爐、熱水煲等，
+            可以按實際生活模式慢慢補上。
+          </p>
+
+          <h2>點樣按空間去規劃？</h2>
+          <p>
+            細單位最常見問題唔係功能不足，而係尺寸唔啱。
+            所以選購前最好先量度門口、走廊、廚房位、浴室位同插座位置，
+            確保雪櫃開門方向、洗衣機深度、冷氣安裝位置都配合到。
+          </p>
+
+          <h2>常見家電優先次序</h2>
+          <ol>
+            <li>雪櫃：基本儲存食材需要，通常最優先</li>
+            <li>洗衣機：減少外出洗衣或手洗負擔</li>
+            <li>冷氣：特別係夏天入伙時影響最明顯</li>
+            <li>抽濕機：適合潮濕單位或需要室內晾衫家庭</li>
+            <li>煮食設備：按是否常煮飯、空間同電力安排決定</li>
+          </ol>
+
+          <h2>購買前應該先量度咩？</h2>
+          <p>
+            建議至少先記低擺放位置長闊高、門口闊度、走廊轉角空間，
+            以及插座位置。好多時唔係部機本身太大，而係送貨入屋或者開門後使用唔方便。
+          </p>
+
+          <h2>延伸比較建議</h2>
+          <p>
+            如果你想再深入比較，可以延伸閱讀
+            <a href="best-aircon-guide.html">公屋冷氣機推薦</a>、
+            <a href="best-washing-machine-guide.html">公屋洗衣機推薦</a>、
+            <a href="best-fridge-guide.html">公屋雪櫃推薦</a>
+            同
+            <a href="best-dehumidifier-guide.html">公屋抽濕機推薦</a>。
+          </p>
+        </article>
+
+        <aside class="related-card">
+          <h3>延伸閱讀</h3>
+          <ul>
+            <li><a href="move-in-guide.html">公屋入伙攻略</a></li>
+            <li><a href="move-in-checklist.html">公屋入伙清單</a></li>
+            <li><a href="best-aircon-guide.html">公屋冷氣機推薦</a></li>
+            <li><a href="best-washing-machine-guide.html">公屋洗衣機推薦</a></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
   </main>
 
-  <footer class="footer">
+  <footer class="site-footer">
     <div class="container">
       <div class="footer-links">
         <a href="index.html">首頁</a>
@@ -102,8 +151,6 @@
         <a href="best-dehumidifier-guide.html">抽濕機推薦</a>
         <a href="best-washing-machine-guide.html">洗衣機推薦</a>
         <a href="best-fridge-guide.html">雪櫃推薦</a>
-        <a href="best-bed-guide.html">床架推薦</a>
-        <a href="best-induction-cooker-guide.html">電磁爐推薦</a>
       </div>
     </div>
   </footer>

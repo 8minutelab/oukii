@@ -3,86 +3,140 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>2026 公屋冷氣機推薦｜窗口式、分體式、匹數點揀｜公屋易</title>
-  <meta name="description" content="整理公屋冷氣機推薦與選購方向，包括窗口式、分體式、匹數、變頻與慳電考慮，協助住戶按空間與預算安排。">
+  <title>2026 公屋冷氣機推薦｜公屋易</title>
+  <meta name="description" content="整理適合香港公屋單位的冷氣機選購方向，包括窗口式、分體式、匹數、變頻與安裝考慮，方便按空間與預算比較。">
   <link rel="canonical" href="https://oukii.com/best-aircon-guide.html">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="topbar">
-    <div class="container topbar-inner">
-      <a href="index.html" class="brand">公屋易</a>
-      <button class="menu-toggle" type="button" onclick="toggleMenu()" aria-label="切換選單">☰</button>
-      <nav class="nav" id="navLinks">
-        <a href="index.html">首頁</a>
-        <a href="move-in-guide.html">入伙攻略</a>
-        <a href="move-in-appliances.html">入伙家電</a>
-        <a href="move-in-checklist.html">入伙清單</a>
-      </nav>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="site-brand" aria-label="公屋易首頁">
+        <span class="brand-icon" aria-hidden="true">
+          <svg viewBox="0 0 64 64" role="img">
+            <rect x="8" y="10" width="30" height="44" rx="6"></rect>
+            <rect x="15" y="17" width="6" height="6" rx="1.5" fill="white"></rect>
+            <rect x="25" y="17" width="6" height="6" rx="1.5" fill="white"></rect>
+            <rect x="15" y="27" width="6" height="6" rx="1.5" fill="white"></rect>
+            <rect x="25" y="27" width="6" height="6" rx="1.5" fill="white"></rect>
+            <rect x="19" y="40" width="10" height="14" rx="2" fill="white"></rect>
+            <rect x="42" y="22" width="10" height="32" rx="5"></rect>
+            <rect x="38" y="18" width="8" height="20" rx="4"></rect>
+          </svg>
+        </span>
+        <span class="brand-text">公屋易</span>
+      </a>
+
+      <div class="header-right">
+        <div class="header-datetime" aria-label="日期與時間資訊">
+          <div class="datetime-time" id="hkTime">01:42</div>
+          <div class="datetime-date-line">
+            <span id="solarDate">3月12日</span>
+            <span>・</span>
+            <span id="weekday">星期四</span>
+          </div>
+          <div class="datetime-lunar-line">
+            <span id="lunarDate">農曆 正月廿四</span>
+            <span class="solar-term-dot">・</span>
+            <span id="solarTerm">驚蟄</span>
+          </div>
+        </div>
+
+        <nav class="desktop-nav" aria-label="主要導航">
+          <a href="index.html">首頁</a>
+          <a href="move-in-guide.html">入伙攻略</a>
+          <a href="move-in-appliances.html">入伙家電</a>
+          <a href="move-in-checklist.html">入伙清單</a>
+        </nav>
+
+        <button class="menu-toggle" type="button" onclick="toggleMenu()" aria-label="切換選單">☰</button>
+      </div>
     </div>
+
+    <nav class="mobile-nav" id="mobileNav" aria-label="手機導航">
+      <a href="index.html">首頁</a>
+      <a href="move-in-guide.html">入伙攻略</a>
+      <a href="move-in-appliances.html">入伙家電</a>
+      <a href="move-in-checklist.html">入伙清單</a>
+      <a href="best-aircon-guide.html">冷氣推薦</a>
+      <a href="best-dehumidifier-guide.html">抽濕機推薦</a>
+      <a href="best-washing-machine-guide.html">洗衣機推薦</a>
+      <a href="best-fridge-guide.html">雪櫃推薦</a>
+    </nav>
   </header>
 
-  <main class="section">
-    <div class="container">
-      <p class="section-label">冷氣推薦</p>
-      <h1>2026 公屋冷氣機推薦</h1>
-      <p>公屋單位揀冷氣，最重要唔係只睇牌子，而係要考慮空間大小、窗口位置、安裝方式、匹數同電費負擔。</p>
-
-      <section class="card info-card">
-        <h2>窗口式定分體式？</h2>
-        <p>窗口式通常安裝相對直接，分體式一般較靜，但要視乎單位結構與安裝條件而定。</p>
-        <p>
-          如果你正同時規劃整體入伙預算，可先參考
-          <a href="move-in-appliances.html">公屋入伙家電攻略</a>，
-          再深入比較冷氣、雪櫃、洗衣機與抽濕機安排。
+  <main>
+    <section class="page-hero">
+      <div class="container article-shell">
+        <p class="page-kicker">冷氣選購</p>
+        <h1 class="page-title">2026 公屋冷氣機推薦</h1>
+        <p class="page-summary">
+          公屋單位安裝冷氣時，最重要唔一定係牌子，而係匹數、安裝位置、用電效率同維修方便程度。
+          如果單位細、窗位有限或者預算有限，窗口式同纖薄型會比較實際；如果追求寧靜與舒適，分體式會更合適。
         </p>
-      </section>
 
-      <section class="card info-card">
-        <h2>選購重點</h2>
-        <ul>
-          <li>按房間大小選匹數</li>
-          <li>考慮變頻與電費</li>
-          <li>留意安裝位置與滴水安排</li>
-        </ul>
-      </section>
-
-      <section class="card info-card">
-        <h2>FAQ</h2>
-        <p><strong>公屋細房係咪一定要高匹數？</strong><br>唔一定，應按實際面積、日照與通風情況判斷。</p>
-      </section>
-
-      <section class="card">
-        <h2>先睇整體規劃，再揀單一產品</h2>
-        <p>
-          如果你仲未決定應該先買邊類家電或家具，
-          可以先返回 <a href="move-in-appliances.html">公屋入伙家電攻略</a>，
-          由整體角度比較冷氣、雪櫃、洗衣機、抽濕機、床架與電磁爐安排，
-          再按自己單位空間、預算與生活習慣作選擇。
-        </p>
-      </section>
-
-      <section class="card related-reading">
-        <h2>相關推薦閱讀</h2>
-        <div class="link-grid">
-          <a class="link-card" href="move-in-appliances.html">
-            <h3>公屋入伙家電攻略</h3>
-            <p>由整體角度規劃冷氣、雪櫃、洗衣機、抽濕機、床架與煮食設備。</p>
-          </a>
-          <a class="link-card" href="best-dehumidifier-guide.html">
-            <h3>2026 公屋抽濕機推薦</h3>
-            <p>潮濕天氣與乾衣安排可一併考慮。</p>
-          </a>
-          <a class="link-card" href="move-in-checklist.html">
-            <h3>公屋入伙清單</h3>
-            <p>搬入前核對大型家電與生活用品。</p>
-          </a>
+        <div class="page-meta">
+          <span class="meta-pill">主題：冷氣選購</span>
+          <span class="meta-pill">內容類型：推薦頁</span>
+          <span class="meta-pill">更新：2026年3月</span>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
+
+    <section class="article-section">
+      <div class="container article-shell">
+        <article class="article-card">
+          <h2>公屋常見冷氣選擇有邊幾種？</h2>
+          <p>
+            最常見係窗口式同分體式。窗口式通常安裝較直接，價位較易入手；
+            分體式則一般較寧靜，送風表現較平均，但安裝條件同預算要求會高少少。
+          </p>
+
+          <h2>點樣揀匹數？</h2>
+          <p>
+            揀匹數時唔可以只睇房間面積，仲要考慮西斜、樓層、日照、是否開放式設計同實際人流。
+            如果匹數太細，長開都未必夠凍；如果太大，成本同耗電負擔可能會增加。
+          </p>
+
+          <h2>窗口式適合咩情況？</h2>
+          <ul>
+            <li>安裝位置較直接</li>
+            <li>預算想控制得穩陣啲</li>
+            <li>細房或獨立睡房使用</li>
+            <li>之後維修及更換希望簡單啲</li>
+          </ul>
+
+          <h2>分體式適合咩情況？</h2>
+          <ul>
+            <li>重視寧靜度</li>
+            <li>客飯廳或較大空間使用</li>
+            <li>希望整體觀感更俐落</li>
+            <li>可配合合適安裝條件</li>
+          </ul>
+
+          <h2>購買前仲要留意咩？</h2>
+          <p>
+            除咗匹數同類型，亦要睇能源效率、保養安排、清洗難度同安裝限制。
+            如果你仲未正式規劃入伙次序，可以先返回
+            <a href="move-in-appliances.html">公屋入伙家電攻略</a>
+            睇整體部署。
+          </p>
+        </article>
+
+        <aside class="related-card">
+          <h3>延伸閱讀</h3>
+          <ul>
+            <li><a href="move-in-appliances.html">公屋入伙家電攻略</a></li>
+            <li><a href="move-in-guide.html">公屋入伙攻略</a></li>
+            <li><a href="best-dehumidifier-guide.html">公屋抽濕機推薦</a></li>
+            <li><a href="best-fridge-guide.html">公屋雪櫃推薦</a></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
   </main>
 
-  <footer class="footer">
+  <footer class="site-footer">
     <div class="container">
       <div class="footer-links">
         <a href="index.html">首頁</a>
@@ -93,8 +147,6 @@
         <a href="best-dehumidifier-guide.html">抽濕機推薦</a>
         <a href="best-washing-machine-guide.html">洗衣機推薦</a>
         <a href="best-fridge-guide.html">雪櫃推薦</a>
-        <a href="best-bed-guide.html">床架推薦</a>
-        <a href="best-induction-cooker-guide.html">電磁爐推薦</a>
       </div>
     </div>
   </footer>
