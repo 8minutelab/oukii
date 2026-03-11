@@ -52,24 +52,23 @@ img {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  color: #315efb;
-  font-size: 1.8rem;
-  font-weight: 800;
-  line-height: 1;
-  flex-shrink: 0;
+  text-decoration: none; /* 確保冇底線 */
 }
 
 .site-logo {
-  width: 36px;
-  height: 36px;
-  display: block;
-  flex-shrink: 0;
+  width: 30px !important;   /* 強制設定闊度 */
+  height: 30px !important;  /* 強制設定高度 */
+  min-width: 30px !important;
   object-fit: contain;
+  display: block;
 }
 
 .brand-text {
-  color: #315efb;
+  font-size: 1.5rem;      /* 字體大細 */
   font-weight: 800;
+  color: #315efb;
+  line-height: 1;
+  padding-top: 2px;       /* 微調令文字同圖案置中對齊 */
 }
 
 .header-right {
