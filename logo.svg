@@ -1,1 +1,14 @@
-<svg width="1500" height="500" viewBox="0 0 1500 500">
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="公屋易標誌">
+  <rect width="128" height="128" fill="none"/>
+  <rect x="28" y="16" width="72" height="94" rx="12" fill="#3563E9"/>
+
+  <rect x="40" y="32" width="11" height="11" rx="2.5" fill="#FFFFFF"/>
+  <rect x="58.5" y="32" width="11" height="11" rx="2.5" fill="#FFFFFF"/>
+  <rect x="77" y="32" width="11" height="11" rx="2.5" fill="#FFFFFF"/>
+
+  <rect x="40" y="50.5" width="11" height="11" rx="2.5" fill="#FFFFFF"/>
+  <rect x="58.5" y="50.5" width="11" height="11" rx="2.5" fill="#FFFFFF"/>
+  <rect x="77" y="50.5" width="11" height="11" rx="2.5" fill="#FFFFFF"/>
+
+  <path d="M54 110V92C54 85.3726 59.3726 80 66 80H74V110H54Z" fill="#FFFFFF"/>
+</svg>

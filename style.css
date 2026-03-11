@@ -51,11 +51,25 @@ img {
 .site-brand {
   display: inline-flex;
   align-items: center;
+  gap: 10px;
   color: #315efb;
   font-size: 1.8rem;
   font-weight: 800;
   line-height: 1;
   flex-shrink: 0;
+}
+
+.site-logo {
+  width: 36px;
+  height: 36px;
+  display: block;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+.brand-text {
+  color: #315efb;
+  font-weight: 800;
 }
 
 .header-right {
@@ -377,6 +391,11 @@ img {
 
   .site-brand {
     font-size: 1.45rem;
+  }
+
+  .site-logo {
+    width: 32px;
+    height: 32px;
   }
 
   .header-right {
